@@ -5,7 +5,7 @@ steps:
       - '-c'
       - |
         gcloud functions deploy HelloWorldGitFunction \
-            --region=europe-west2 \
+            --region=us-central1 \
             --runtime=java17 \
             --trigger-http \
             --entry-point=com.wannacall.lambda.HelloWorld \
