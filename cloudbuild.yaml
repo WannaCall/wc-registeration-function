@@ -1,0 +1,19 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud functions deploy HelloWorldGitFunction \
+            --region=europe-west2 \
+            --runtime=java17 \
+            --trigger-http \
+            --entry-point=com.wannacall.lambda.HelloWorld \
+            --allow-unauthenticated \
+            --set-env-vars= \
+            --timeout=30 \
+            --memory=256 \
+            --source=src/main/java \
+            --project=crypto-will-250811
+options:
+  logging: CLOUD_LOGGING_ONLY
