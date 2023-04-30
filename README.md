@@ -1,0 +1,1 @@
+# wc-registeration-function
