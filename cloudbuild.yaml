@@ -14,6 +14,6 @@ steps:
             --timeout=30 \
             --memory=256 \
             --source=src/main/java \
-            --project=crypto-will-250811
+            --project=wannacall-server
 options:
   logging: CLOUD_LOGGING_ONLY
